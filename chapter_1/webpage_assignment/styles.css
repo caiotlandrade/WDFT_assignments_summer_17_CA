@@ -6,6 +6,114 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 /* START CODING BELOW */
+
+.container {
+    margin: 0px;
+    height: 1000px;  /* to allow scrowl */
+}
+
+.nav_bar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: +1;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.hero {
+    background-image: url("./assets/images/header-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: grey;
+    height: 410px;
+}
+
+.title {
+    padding: 20px 20px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.4em;
+    color: #1e91ff;
+}
+
+head {
+
+}
+
+aside {
+
+}
+
+.side_menu{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 10px 0px;
+
+}
+
+.side_menu a{
+    color: #1a45bd;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+.side_menu a:hover {
+    color: #1e91ff;
+}
+
+.side_menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+.side_menu li{
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.main_column {
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    margin: 10px 0px;
+}
+
+.section_title {
+    margin: 15px 30px;
+    color: #1a45bd;      
+}
+
+.section_title h2{
+    font-size: 2em;
+    margin: 0px;
+}
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 150px;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 13px 13px 60px 13px;
+    margin: 13px;
+    font-size: 1.4em;
+}
