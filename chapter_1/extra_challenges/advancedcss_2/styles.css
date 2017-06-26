@@ -1,0 +1,54 @@
+    body {
+    	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    	font-weight: 300;
+    }
+    .container {
+    	margin:0 auto;
+    	max-width:960px;
+    	padding-bottom:250px;
+        color:white;
+    }
+    .jumbotron {
+    	width: 100%;
+    	background-color:#3498db;
+    }
+    .jumbotron h1, .jumbotron h2 {
+    	font-weight: 100;
+    }
+    .jumbotron h1 {
+    	font-size:80px;
+    }
+    .content {
+    	text-align: center;
+    	padding: 50px;
+    }
+    .content-image {
+    	width: 100%;
+    }
+    .bottom {
+        display: inline-block;
+    	width: 50%;
+    }
+    .features {
+    	background-color: #9b59b6;
+        margin-right: -4.5px;
+    }
+    .resources {
+    	background-color: #2ecc71;
+        margin-right: -4.5px;
+    }
+    .bottom-content {
+        padding: 20px;
+    }
+    .bottom-content ul {
+    	line-height: 30px;
+    }
+    .bottom-heading {
+    	text-decoration: underline;
+    }
+    .bottom-content ul a {
+    	color:white;
+    }
+    .color {
+    	color:#9b59b6;
+    }
