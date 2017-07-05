@@ -6,10 +6,8 @@
 order('Lobster','Wild Rice','Wine')
 
 
-// For this assignment, all meals will consist of 3 items, a main dish, a side dish, and a drink.
-// HINT: look up how to use the setTimeout() function to wait for a period of time.
-
 // WRITE YOUR CODE BELOW
+
 // Order Function Here:
 
 function order(main, side, drink) {
@@ -22,11 +20,6 @@ function order(main, side, drink) {
 }
 
 // Cook Function Here:
-
-// The second function will be the 'cook' function, which again will take in the 3 meal parameters.
-// This function will need to look through the restaurant's menu and determine the total time it will take to prepare the 3 items that were ordered.
-// Once the total time has been determined, the function should tell the user how much time it will take to prepare the meal, and then wait that amount of time in seconds.
-// After that, the 'serve' function will be called with the 3 meal items as arguments.
 
 function cook(main, side, drink) {
     myOrder = generateMenu().filter(function(menuItem) {
@@ -41,10 +34,8 @@ function cook(main, side, drink) {
     }, (totalTime * 1000));
 }
 
-// Serve Function Here:
 
-// The final 'serve' function will need to take in the 3 meal parameters, and loop through the menu to find out the total price of all 3 menu items.
-// The function should log that the meal is ready to serve, and also inform the user what the price of the meal will be.
+// Serve Function Here:
 
 function serve(main, side, drink) {
     console.log ("Your order is ready!");
