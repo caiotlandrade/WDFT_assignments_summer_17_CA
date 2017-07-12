@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal and Entries</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/objects_assignment.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="small-8 large-offset-2 space" id="display">
+        <form>
+          <h3>Please, create your journal</h3>
+          <input type="text" placeholder="What is the journal about?" name="journal-topic" id="journal-topic">
+          <div class="button expanded" id="button-journal">Create a Journal</div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-4 columns hidden space" id="hide">
+        <form>
+          <h3>Title</h3>
+          <input type="text" placeholder="What is your story?" name="title" id="title">
+          <h3>Author</h3>
+          <input type="text" placeholder="Leave your name here." name="author" id="author">
+          <h3>Content</h3>
+          <textarea name="content" placeholder="Please, tell us more!" rows="8" id="content" class="text-area"></textarea>
+          <div class="button expanded" id="button-entry">Publish</div>
+        </form>
+      </div>
+      <div>
+        <div class="medium-6 large-offset-1 columns hidden space" id="hide2">
+          <h2 id="h2">This is your journal about </h2>
+          <div>
+              <ul>
+                 <li id="new-entries"></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/objects_assignment.js"></script>
+</body>
+</html>
