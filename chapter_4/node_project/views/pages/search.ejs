@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Movie Database</h1>
+            <div class="row text-right">
+                <form action="/search" method="get">
+                <h3>Search <input type="text" name="searchText"></h3><input type="submit" value="Submit"> 
+                </form>
+            </div>
+            <%
+            for (var i=0; i<movies.length; i++) {
+            %>
+            <a class="movie-link" href="<%= "/movie/" + movies[i].id /* link to individual movie URL */ %>" >
+            <div class="media movie-list-item">
+                <div class="media-left">
+                    <div class="poster-container">
+                        <img class="media-object movie-poster" src="<%= movies[i].poster /* link to individual movie poster */ %>"/>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <%= movies[i].title /* text for individual movie title */ %>
+                        <span class="badge"><%= movies[i].rated /* text for individual movie rating */ %></span>
+                    </h4>
+                    <div>
+                        <%= movies[i].plot /* text for individual movie plot */ %>
+                    </div>
+                    <div class="released-date">
+                        Released: <%= movies[i].year /* text for individual movie release date */ %>
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+            <% } %>
+
+            <div class="row">
+                <div class=buttons>
+                    <a class="btn btn-primary" href="/"<% /* link to main page */ %>>Back</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

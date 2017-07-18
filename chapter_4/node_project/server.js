@@ -46,7 +46,7 @@ app.get('/search', (req, res) => {
       movieResults.push(moviesArray[i]);
     }
   }
-    res.render('pages/index', {movies: movieResults})
+    res.render('pages/search', {movies: movieResults})
 });
 
 //setting the static assets folder
